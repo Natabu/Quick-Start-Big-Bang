@@ -44,6 +44,11 @@ fluentbit:
 istio:
   enabled: true
   values:
+    istiod:
+      resources:
+        requests:
+          cpu: 100m
+          memory: 128Mi
     kiali:
       dashboard:
         auth:
