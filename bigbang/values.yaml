@@ -188,7 +188,7 @@ clusterAuditor:
       limits: {}
 
 monitoring:
-  enabled: false
+  enabled: true
   values:
     alertmanager:
       alertmanagerSpec:
