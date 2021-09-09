@@ -195,20 +195,20 @@ monitoring:
         resources:
           requests:
             cpu: 100m
-            memory: 200Mi
+            memory: 128Mi
           limits: {}
     prometheusOperator:
       resources:
         requests:
           cpu: 250m
-          memory: 400Mi
+          memory: 256Mi
         limits: {}
     prometheus:
       prometheusSpec:
         resources:
           requests:
             cpu: 100m
-            memory: 200Mi
+            memory: 128Mi
           limits: {}
     grafana:
       resources:
