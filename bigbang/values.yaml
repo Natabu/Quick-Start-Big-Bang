@@ -13,7 +13,7 @@ networkPolicies:
   controlPlaneCidr: 172.16.0.0/12
 
 logging:
-  enabled: true
+  enabled: false
   values:
     elasticsearch:
       master:
@@ -41,7 +41,7 @@ fluentbit:
       privileged: true
 
 istio:
-  enabled: true
+  enabled: false
   values:
     kiali:
       dashboard:
@@ -173,7 +173,7 @@ istio:
           -----END CERTIFICATE-----
 
 clusterAuditor:
-  enabled: true
+  enabled: false
   values:
     resources:
       requests:
@@ -182,7 +182,7 @@ clusterAuditor:
       limits: {}
 
 monitoring:
-  enabled: true
+  enabled: false
   values:
     alertmanager:
       alertmanagerSpec:
@@ -224,7 +224,7 @@ monitoring:
         limits: {}
 
 gatekeeper:
-  enabled: true
+  enabled: false
   values:
     replicas: 1
     resources:
@@ -234,7 +234,7 @@ gatekeeper:
       limits: {}
 
 twistlock:
-  enabled: true
+  enabled: false
   values:
     console:
       persistence:
@@ -418,11 +418,6 @@ addons:
             cpu: 100m
             memory: 200Mi
           limits: {}
-        resources:
-          requests:
-            cpu: 100m
-            memory: 200Mi
-          limits: {}
       anchoreEnterpriseNotifications:
         resources:
           requests:
@@ -474,7 +469,7 @@ addons:
   mattermost:
     enabled: false
     elasticsearch:
-      enabled: true
+      enabled: false
     values:
       replicaCount: 1
       resources:
