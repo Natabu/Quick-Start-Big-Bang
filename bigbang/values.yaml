@@ -42,7 +42,7 @@ fluentbit:
       privileged: true
 
 istio:
-  enabled: false
+  enabled: true
   values:
     kiali:
       dashboard:
