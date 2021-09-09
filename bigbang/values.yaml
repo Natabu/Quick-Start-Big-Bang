@@ -36,6 +36,7 @@ logging:
       count: 1
 
 fluentbit:
+  enabled: false
   values:
     securityContext:
       privileged: true
